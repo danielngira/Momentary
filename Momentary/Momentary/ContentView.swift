@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Home View
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -21,24 +22,11 @@ struct ContentView: View {
             }
             )
             .backgroundStyle(Color.teal)
+            .cornerRadius(10)
             .foregroundColor(.white)
             .frame(width: 200)
             Spacer()
-            HStack {
-        
-                Button("Home"){
-                    //...
-                }
-                Spacer()
-                Button("Profile"){
-                    //
-                }
-                Spacer()
-                Button("Actions"){
-                    //
-                }
-            }
-            .foregroundColor(.white)
+
         }
         .padding()
         .containerRelativeFrame([.horizontal, .vertical])
@@ -46,6 +34,7 @@ struct ContentView: View {
     }
 }
 
+//Preview
 #Preview {
     ContentView()
 }
