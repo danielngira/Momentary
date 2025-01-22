@@ -11,10 +11,12 @@ struct ScreenTimeView: View {
     var body: some View{
         VStack{
             Text("Screen Time")
+                .foregroundStyle(Color.black)
+                .bold()
         }
         .padding()
         .containerRelativeFrame([.horizontal, .vertical])
-        .background(Gradient(colors: [.orange, .yellow, .cyan, .blue, .teal, .green]).opacity(0.4))
+        .background(Color.green.opacity(0.3))
     }
 }
 

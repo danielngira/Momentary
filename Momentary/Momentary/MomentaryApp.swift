@@ -11,7 +11,7 @@ import SwiftUI
 struct MomentaryApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Tab()
         }
     }
 }

@@ -17,20 +17,15 @@ struct ContentView: View {
             Text("Hello, User!")
                 .padding()
             
-            GroupBox(label: Text("Daily Screen Time:"), content: {
-                Text("40 mins")
-            }
-            )
-            .backgroundStyle(Color.teal)
-            .cornerRadius(10)
-            .foregroundColor(.white)
-            .frame(width: 200)
+            Text("Screen Time: 40 mins")
+                .bold()
+                .padding()
+                .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 10))
             Spacer()
-
         }
         .padding()
         .containerRelativeFrame([.horizontal, .vertical])
-        .background(Gradient(colors: [.orange, .yellow, .cyan, .blue, .teal, .green]).opacity(0.4))
+        .background(Color.green.opacity(0.3))
     }
 }
 
